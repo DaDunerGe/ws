@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王帅社区发帖指南</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #ffffff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+        }
+        
+        .logo {
+            font-size: 48px;
+            margin-bottom: 15px;
+            color: #9191ff;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #9191ff;
+            position: relative;
+            display: inline-block;
+        }
+        
+        h1:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: #9191ff;
+            border-radius: 2px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #666;
+        }
+        
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(145, 145, 255, 0.15);
+            padding: 30px;
+            transition: all 0.3s ease;
+            border-top: 4px solid #9191ff;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(145, 145, 255, 0.2);
+        }
+        
+        .card-icon {
+            font-size: 36px;
+            color: #9191ff;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            color: #666;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        
+        .tips {
+            margin-bottom: 20px;
+        }
+        
+        .tip-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        
+        .tip-icon {
+            color: #9191ff;
+            margin-right: 10px;
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+        
+        .tip-content {
+            flex: 1;
+            color: #555;
+        }
+        
+        .highlight-box {
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border-left: 4px solid #9191ff;
+        }
+        
+        .highlight-box h3 {
+            color: #9191ff;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .highlight-box h3 i {
+            margin-right: 10px;
+        }
+        
+        .format-example {
+            background: #f0f2ff;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+            font-family: monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #555;
+        }
+        
+        .format-example .title {
+            font-weight: bold;
+            color: #9191ff;
+        }
+        
+        .format-example .content {
+            margin-top: 8px;
+        }
+        
+        .btn-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #9191ff;
+            color: white;
+            padding: 14px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #7a7aff;
+            transform: translateY(-3px);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-size: 14px;
+            padding: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-blog"></i>
+            </div>
+            <h1>王帅社区发帖指南</h1>
+            <p class="subtitle">分享您的想法，打造英俊内容</p>
+        </header>
+        
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h2>内容创作建议</h2>
+                <div class="tips">
+                    <div class="tip-item">
+                        <div class="tip-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="tip-content">
+                            <strong>明确主题</strong> - 每篇文章聚焦一个英俊主题
+                        </div>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <div class="tip-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="tip-content">
+                            <strong>提供价值</strong> - 分享您对王帅的独特见解和经验
+                        </div>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <div class="tip-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="tip-content">
+                            <strong>保持原创</strong> - 展现您的个人风格
+                        </div>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <div class="tip-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="tip-content">
+                            <strong>结构清晰</strong> - 使用标题和段落组织内容
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <h2>格式优化技巧</h2>
+                <div class="tips">
+                    <div class="tip-item">
+                        <div class="tip-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="tip-content">
+                            <strong>引人入胜的标题</strong> - 简洁有力，准确反映内容
+                        </div>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <div class="tip-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="tip-content">
+                            <strong>段落长度</strong> - 保持段落简短（3-5句话）
+                        </div>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <div class="tip-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="tip-content">
+                            <strong>使用副标题</strong> - 将长文分成多个小节
+                        </div>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <div class="tip-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="tip-content">
+                            <strong>通过URL添加图片</strong> - 增强内容表现力
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-tags"></i>
+                </div>
+                <h2>王帅社区的特点</h2>
+                <div class="tips">
+                    <div class="tip-item">
+                        <div class="tip-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="tip-content">
+                            <strong>匿名发布</strong> - 无需登录，不会泄露隐私，放心地发布自己对王帅的见解
+                        </div>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <div class="tip-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="tip-content">
+                            <strong>使用HTML语言</strong> - 可更容易地自定义页面的功能，样式等
+                        </div>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <div class="tip-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="tip-content">
+                            <strong>轻松发布</strong> - 轻松制作页面，一键发布
+                        </div>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <div class="tip-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="tip-content">
+                            <strong>无点赞评论</strong> - 无推流系统，公平展示每篇文档
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="highlight-box">
+            <h3><i class="fas fa-comments"></i> 需要注意</h3>
+            <div class="tips">
+                <div class="tip-item">
+                    <div class="tip-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="tip-content">
+                        请勿发布违规内容
+                    </div>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="tip-content">
+                        只能通过URL添加图片等附件
+                    </div>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="tip-content">
+                        <p style="color: red;">重要提示：发布内容后无法直接删除！！！(可联系网站管理员删除)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>王帅社区 | 让每一篇文章都闪耀英俊的光芒</p>
+        </footer>
+    </div>
+</body>
+</html>
